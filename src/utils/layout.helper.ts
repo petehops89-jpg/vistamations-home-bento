@@ -21,7 +21,7 @@ export  const keys = [
 
 export const AboutLayout = {
     lg: [
-      { i: "a", x: 0, y: 0, w: 2, h: 2, isResizable: true },
+      { i: "a", x: 0, y: 0, w: 3, h: 3, isResizable: true },
       { i: "b", x: 2, y: 0, w: 1, h: 1, isResizable: true },
       { i: "c", x: 0, y: 4, w: 1, h: 1, isResizable: true },
       { i: "d", x: 0, y: 2, w: 1, h: 1, isResizable: true },
