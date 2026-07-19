@@ -1,0 +1,47 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "vistamations-webworker",
+	"compatibility_date": "2024-09-23",
+	"assets": {
+		"directory": "./dist"
+	},
+	"d1_databases": [
+		{
+			"binding": "vista_db",
+			"database_name": "vista_db",
+			"database_id": "f8aa3c6d-a52e-4a94-bc70-eb0018c6382e"
+		}
+	],
+	"observability": {
+		"enabled": false,
+		"traces": {
+			"enabled": true
+		}
+	},
+	"routes": [
+		{
+			"pattern": "vistamations.com",
+			"zone_name": "vistamations.com",
+			"custom_domain": true,
+			"enabled": true,
+			"previews_enabled": false
+		}
+	],
+	"vars": {
+		"POSTGRES_URL": "postgresql://neondb_owner:npg_SZHad5MVFY1e@ep-twilight-wind-a76dog8z-pooler.ap-southeast-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require    "
+	},
+	"send_email": [
+		{
+			"name": "info_mail"
+		}
+	],
+	"ai": {
+		"binding": "AI"
+	},
+	"images": {
+		"binding": "vista_image_binding"
+	},
+	"media": {
+		"binding": "vista_media_binding"
+	}
+}
