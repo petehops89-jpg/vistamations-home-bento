@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Layout from './components/layout';
 import Navbar from './components/navbar';
+import HeroTile from './components/HeroTile';
 
 export enum TabKey {
   About = "About",
@@ -27,6 +28,9 @@ function App() {
 
   return (
     <main className="relative">
+      <div className="w-full max-w-[1280px] mx-auto px-[10px] h-[500px]">
+        <HeroTile />
+      </div>
       <Navbar tab={tab} setTab={setTab} left={x} sliderWidth={w} />
       <Layout tab={tab} setTab={setTab} left={x} sliderWidth={w} />
     </main>
